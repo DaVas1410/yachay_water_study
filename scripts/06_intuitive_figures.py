@@ -52,7 +52,7 @@ def _decision_map():
                     fontsize=8, color="#1a237e", zorder=6,
                     path_effects=[pe.withStroke(linewidth=2, foreground="white")])
 
-    ax.set_title("Mapa de Decisión de Estaciones de Agua (Intuitivo)", fontsize=14, fontweight="bold")
+    ax.set_title("Mapa de Decisión de Estaciones de Agua", fontsize=14, fontweight="bold")
     ax.set_xlabel("Este (m, UTM 17S)")
     ax.set_ylabel("Norte (m, UTM 17S)")
     ax.grid(True, alpha=0.2, linestyle="--")
