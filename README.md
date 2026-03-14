@@ -55,6 +55,7 @@ python3 scripts/01_fetch_data.py
 python3 scripts/02_terrain_plots.py
 python3 scripts/03_solar_heatmaps.py
 python3 scripts/04_scoring.py
+python3 scripts/06_intuitive_figures.py
 python3 scripts/05_export_report.py
 ```
 

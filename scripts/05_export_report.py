@@ -465,6 +465,13 @@ def export_report():
         "06_scoring_candidates.png":
             "Figura 6 — Análisis multi-criterio: capas de puntuación solar, sombra y proximidad; "
             "mapa combinado con los 8 candidatos prioritarios y su tabla de ubicación.",
+        "07_decision_map.png":
+            "Figura 7 — Mapa de decisión simplificado con sitios requeridos de entrada y ubicación final "
+            "de candidatos (dentro de edificio vs adyacente).",
+        "08_solar_trend.png":
+            "Figura 8 — Tendencia mensual de GHI con promedio anual, mes de máximo y mínimo.",
+        "09_candidate_quality.png":
+            "Figura 9 — Resumen de calidad por candidato: puntaje final y distancia a rutas estudiantiles.",
     }
 
     with PdfPages(str(pdf_path)) as pdf:
