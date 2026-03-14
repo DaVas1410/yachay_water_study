@@ -1,0 +1,19 @@
+{
+  "study_area": "Yachay Tech + Jardin Botanico + Innopolis",
+  "weights": {
+    "solar": 0.3,
+    "shade": 0.2,
+    "building": 0.35,
+    "proximity": 0.15
+  },
+  "candidate_constraints": [
+    "Stakeholder-defined anchors",
+    "Mandatory zones: Jardin Botanico, Innopolis",
+    "Building-priority snapping"
+  ],
+  "outputs": [
+    "candidates_geospatial.csv",
+    "candidates_geospatial.geojson",
+    "zone_coverage_summary.csv"
+  ]
+}

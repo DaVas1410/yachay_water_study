@@ -1,0 +1,4 @@
+nearest_zone,n_candidates,n_inside_building,mean_score,mean_dist_to_road_m
+Campus Principal,7,5,0.8878732295282459,23.86607004667631
+Innopolis / C. Emprendimiento,1,0,0.5715717214064941,14.0181091925642
+Jardín Botánico,1,0,0.5846190864331622,100.29022021300638
