@@ -181,7 +181,7 @@ def fetch_solar():
 
     url = "https://power.larc.nasa.gov/api/temporal/climatology/point"
     params = {
-        "parameters": "ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN,T2M",
+        "parameters": "ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN,T2M,UTCI_MAX,UV_INDEX",
         "community": "RE",
         "longitude": -78.1760,   # main campus point
         "latitude":  0.4052,
@@ -224,11 +224,13 @@ def _generate_synthetic_solar():
     ghi = [5.1, 4.6, 4.5, 4.4, 4.8, 5.2, 5.5, 5.6, 5.3, 4.9, 4.8, 5.0, 4.98]
     clear = [g * 1.18 for g in ghi]
     t2m   = [14.2]*12 + [14.2]
+    uv = [8.5, 7.8, 7.5, 7.2, 7.6, 8.1, 8.4, 8.2, 7.9, 8.0, 8.2, 8.6, 7.95]
 
     df = pd.DataFrame({
         "ALLSKY_SFC_SW_DWN": ghi,
         "CLRSKY_SFC_SW_DWN": clear,
         "T2M": t2m,
+        "UV_INDEX": uv,
     }, index=months)
     df.index.name = "Month"
     df.to_csv(RAW / "solar_nasa_power.csv")
